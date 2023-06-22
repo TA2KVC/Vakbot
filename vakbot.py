@@ -834,6 +834,20 @@ def pisir():
     client.create_tweet(text=stat, media_ids=[media.media_id])
 
 
+@bot.message_handler(commands=['tweet'])
+def tweetlemece(message):
+    args = message.text
+    varg = message.text.split()
+    if len(varg) < 2:
+        bot.reply_to(message, "Hatali islem: /tweet [metin]")
+        return
+    twik = ' '.join(args.split()[1:])
+    telewt = "\"" +twik + "\" -> tweetlendi."
+    bot.send_message(message.chat.id, telewt)
+    stat = twik + "\n\n\U0001F986\U0001F916 @VakvakBot\U00002122"
+    client.create_tweet(text=stat)
+
+
 t1=threading.Thread(target=botlisten)
 #schedule.every(180).minutes.do(auto)
 schedule.every().day.at("19:38").do(ata)
