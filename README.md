@@ -7,6 +7,8 @@ Telegram Bot API
 Python -> working on Raspberry Pi 4
 
 
+https://github.com/TA2KVC/Vakbot/assets/62475996/27ada4d4-5e06-4b1a-bc02-3b5e98ddbcbf
 
-https://github.com/TA2KVC/Vakbot/assets/62475996/ce1fd8c4-9417-45a7-802f-d3204febf1f1
+
+
 
